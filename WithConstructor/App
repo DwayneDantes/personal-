@@ -1,0 +1,17 @@
+public class App {
+    public static void main(String[] args) {
+
+        
+        Character Swordswoman =new Character(350,0,60,"Fiora");
+        Swordswoman.sayMyName();
+        Swordswoman.sayMyAttributes();
+
+        Character Viking =new Character(400,0,100,"Tryndamere");
+        Viking.sayMyName();
+        Viking.sayMyAttributes();
+
+        Character Darkin =new Character(450,0,50,"Aatrox");
+        Darkin.sayMyName();
+        Darkin.sayMyAttributes();
+}
+}
