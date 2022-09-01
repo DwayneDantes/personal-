@@ -1,0 +1,24 @@
+public class Character {
+    // Attributes
+    int AttackDamage;
+    int Abilitypower;
+    int Armor ;
+    String name;
+
+    // Method
+    public void sayMyName() {
+        System.out.println("Hello I am " + name);
+    }
+
+    public void sayMyAttributes() {
+        System.out.println("My Attack Damage is " + AttackDamage + " My Ability Power is " + Abilitypower + " My Armor is " + Armor);
+    }
+
+    // Constructor
+    public Character(int ATK, int AP, int AR, String characterName) {
+        AttackDamage = ATK;
+        Abilitypower = AP;
+        Armor  = AR;
+        name = characterName;
+    }
+}
