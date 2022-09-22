@@ -1,0 +1,146 @@
+
+// import the Scanner class
+import java.util.Scanner;
+
+public class App {
+    // Scanner Object
+    static Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        myOrder();
+    }
+
+    static void myOrder() {
+
+        System.out.println("Welcome to Angels Pizza!");
+
+        System.out.println("Please select from our menu:");
+        System.out.println("Enter A if you want a Creamy Spinach Pizza that costs 400.00 pesos(Prices may vary proportional to sizes)");
+        System.out.println("Enter B if you want a Four Cheese Pizza that costs 300.00 pesos(Prices may vary proportional to sizes");
+
+        System.out.print("Enter your choice here: ");
+        char choice = scan.next().charAt(0);
+
+        String pizza = "";
+        int price = 0;
+        
+        int quantity = 0;
+        String Crust = "";
+        String Size = "";
+        scan.nextLine();
+        //What kind of pizza would you like?
+        switch (choice) {
+            case 'A':
+                pizza = "Creamy Spinach Pizza";
+                price= 400;
+                
+                System.out.println("How many would you like?");
+                quantity =scan.nextInt();
+                
+                scan.nextLine();
+                System.out.println("What type of crust would you like?");
+                System.out.println("Please select between Hand-tossed and Thin crust");
+                String crust = scan.nextLine();
+                
+                switch (crust) {
+                    case "Hand-tossed" :
+                        Crust = "Hand Tossed";
+                        break;
+                    case "Thin crust" :
+                        Crust = "Thin crust";
+                        break;
+
+                        default :
+                        System.out.println("Invalid Order");
+
+
+                }
+
+        //Size of the Pizza
+                System.out.println("What size would you like for that pizza?");
+                System.out.println("You can choose Large,Family,or Big Family");
+                //scan.nextLine();
+                String size =scan.next();
+                switch (size) {
+                    case "Large" :
+                    Size = "Large";
+                    break;
+
+                    case "Family" :
+                    Size = "Family";
+                    price =price+400;
+                    break;
+                    
+                    case "Big Family" :
+                    Size= "Big Family";
+                    price= price+600;
+                    break;
+
+                    default :
+                    System.out.println("Invalid Order");
+                    break;
+
+
+                }
+                break;
+            //Case B
+                case 'B':
+                pizza = "Four Cheese Pizza";
+                price=300;
+                System.out.println("How many would you like?");
+                quantity =scan.nextInt();
+                
+                System.out.println("What type of crust would you like?");
+                System.out.println("Please select between Hand-tossed and Thin crust");
+                String crust2 = scan.nextLine();
+                //what Type of 
+                switch (crust2) {
+                    case "Hand-tossed" :
+                        Crust = "Hand Tossed";
+                    case "Thin crust" :
+                        Crust = "Thin crust";
+
+                    default :
+                    System.out.println("Invalid Order");
+                    break;
+
+                }
+                    
+                
+                System.out.println("What size would you like for that pizza?");
+                System.out.println("You can choose Large,Family,or Big Family");
+                String size2 =scan.next();
+                switch (size2) {
+                    case "Large" :
+                    Size = "Large";
+                    price = price+200;
+                    break;
+
+                    case "Family" :
+                    Size = "Family";
+                    price = price+300;
+                    break;
+
+                    case "Big Family" :
+                    Size= "Big Family";
+                    price = price+500;
+                    break;
+
+                    default :
+                    System.out.println("Invalid order");
+                }
+                break;
+                
+                
+            default:
+                System.out.println("Invalid Order");
+                return;
+
+        }
+
+        System.out.println("Your order is: " + pizza +  Crust + " with a size of " + Size);
+        System.out.println("Your total amount is: " + quantity*price );
+
+        scan.close();
+    }
+}
