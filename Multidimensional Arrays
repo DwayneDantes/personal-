@@ -1,0 +1,250 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+  
+        char[][] mdArray = {{'S','L','A' ,'M' }, {'T','I','L','E'}, {'E','A','T','S'}, {'P','R','O','S'}};
+
+        System.out.println("Type all possible words");
+        //4 WORDS: SLAM LIAR ALTO MESS
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if ((row == 0)||(row==1)||(row==2)||(row==3)) {
+                    System.out.print(mdArray[row][column]);
+                
+                }
+            }
+        }
+        //1 WORD 
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if ((column==0)) {
+                    System.out.print(mdArray[row][column]);
+                }
+                {
+                    System.out.print(" ");
+                }
+            }
+        }
+        //1 WORD
+        
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if ((column==1)) {
+                    System.out.print(mdArray[row][column]);
+                }
+                {
+                    System.out.print(" ");
+                }
+            }
+        }
+        //1 WORD
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if ((column==2)) {
+                    System.out.print(mdArray[row][column]);
+                }
+                {
+                    System.out.print(" ");
+                }
+            }
+        }
+        //1 WORD
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if ((column==3)) {
+                    System.out.print(mdArray[row][column]);
+                }
+                {
+                    System.out.print(" ");
+                }
+            }
+        }
+        //1 WORD
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if (row==column) {
+                    System.out.print(mdArray[row][column]);}
+                    else
+                    {
+                        System.out.print(" ");
+                    }
+                }
+            }
+        
+           
+        //1 WORD
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if ((row == 0 &&  column== 3) || (row == 1 &&  column== 2) || (row == 2 &&  column== 1) || (row == 3 &&  column== 0)) {
+                    System.out.print(mdArray[row][column]);
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+        
+        
+                
+                
+                
+               
+            }
+        }
+        //1 WORD
+        for (int row = 0; row < 4; row++) {
+            System.out.println("");
+            for (int column = 0; column < 4; column++) {
+                if ((row == 1 &&  column== 2) || (row == 2 &&  column== 1) || (row == 3 &&  column== 0)) {
+                    System.out.print(mdArray[row][column]);
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+    }
+}
+
+        
+    //1 WORD
+    for (int row = 3; row>=0; row--) {
+        System.out.println("");
+        for (int column = 0; column<4 ; column++) {
+            if ((column == 0)) {
+                System.out.print(mdArray[row][column]);
+            
+            }
+            {
+                System.out.print(" ");
+            }
+        }
+    }
+    //1 WORD
+    for (int row = 3; row>= 0; row--) {
+        System.out.println("");
+        for (int column = 0; column<4 ; column++) {
+            if ((column == 1)) {
+                System.out.print(mdArray[row][column]);
+            
+            }
+            {
+                System.out.print(" ");
+            }
+        }
+    }
+    //1 WORD 
+    for (int row = 0; row < 4; row++) {
+        System.out.println("");
+        for (int column = 0; column < 4; column++) {
+            if ((row == 2 &&  column== 0) || (row == 2 &&  column== 1) || (row == 2 &&  column== 2)) {
+                System.out.print(mdArray[row][column]);
+            }
+            {
+                System.out.print(" ");
+            }
+            
+}
+}
+//1 WORD
+for (int row = 0; row < 4; row++) {
+    System.out.println("");
+    for (int column = 0; column < 4; column++) {
+        if ((row == 3 &&  column== 0) || (row == 3 &&  column== 1) || (row == 3 &&  column== 2)) {
+            System.out.print(mdArray[row][column]);
+        }
+        {
+            System.out.print(" ");
+        }
+        
+
+
+    }
+}
+//1 WORD
+for (int row = 3; row >= 0 ; row--) {
+    System.out.println("");
+    for (int column = 3; column >= 0 ; column--) {
+        if ((row==1&& column==0)||(row==2 && column==1)||(row==3 && column==2)) {
+            System.out.print(mdArray[row][column]);
+        
+        }
+        else
+        {
+            System.out.print(" ");
+        }  
+    }
+}
+//1 WORD
+for (int row = 0; row < 4 ; row++) {
+    System.out.println("");
+    for (int column = 0; column <4 ; column++) {
+        if ((row==1&& column==0)||(row==2 && column==1)||(row==3 && column==2)) {
+            System.out.print(mdArray[row][column]);
+        
+        }
+        else
+        {
+            System.out.print(" ");
+        }  
+    }
+}
+//1 WORD 
+for (int row = 3; row >=0; row--) {
+    System.out.println("");
+    for (int column = 3; column>= 0; column--) {
+        if ((row== 2 && column==3)||(row==1 && column==3)||(row==0 && column==3)) {
+            System.out.print(mdArray[row][column]);
+        }
+        {
+            System.out.print(" ");
+        }
+    }
+}
+//1 WORD 
+for (int row = 0; row < 4; row++) {
+    System.out.println("");
+    for (int column = 0; column < 4; column++) {
+        if ((row== 0 && column==2)||(row==1 && column==2)||(row==2 && column==2)) {
+            System.out.print(mdArray[row][column]);
+        }
+        {
+            System.out.print(" ");
+        }
+    }
+}
+    
+for (int row = 3; row >=0; row--) {
+        System.out.println("");
+        for (int column = 2; column>= 0; column--) {
+            if ((row== 2 && column==1)||(row==1 && column==1)||(row==0 && column==1)) {
+                System.out.print(mdArray[row][column]);
+            }
+            else
+        {
+            System.out.print(" ");
+        }
+        }
+    }
+
+    for (int row = 4; row >=0; row--) {
+        System.out.println("");
+        for (int column = 2; column >=0; column--) {
+            if ((row == 0 &&  column== 3) || (row == 1 &&  column== 2) || (row == 2 &&  column== 1) || (row == 3 &&  column== 0)) {
+                System.out.print(mdArray[row][column]);
+            }
+            else
+            {
+                System.out.print(" ");
+            }
+       
+
+
+}
+}
+    }
+}
